@@ -1,0 +1,91 @@
+@media (max-width: 576px) {
+  /* navbar */
+
+  .text-banner {
+    top: 50%;
+    left: 50%;
+    color: white;
+    display: inline-block;
+  }
+  #nav-bar {
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+  }
+  .container-nb {
+    flex-direction: column;
+  }
+  .nb {
+    border: none;
+  }
+  .container-kinhnghiem {
+    display: block;
+  }
+  #personal-info {
+    margin-left: 25px;
+    padding-bottom: 10%;
+  }
+  #target {
+    margin-right: 25px;
+    padding-bottom: 5%;
+  }
+  /* mục chính */
+  .container-job-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* chứng chỉ */
+  .chungchi {
+    display: block;
+  }
+  .chungchi1,
+  .chungchi2,
+  .chungchi3 {
+    display: block;
+    padding-right: 10%;
+    line-height: 10px;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .chungchi2 {
+    border-left: none;
+  }
+  .chungchi3 {
+    border-top: none;
+  }
+  .chungchi2 img {
+    border-left: none;
+  }
+  .chungchi2 .tenchungchi {
+    border-left: none;
+  }
+  /* dự án */
+  .container-duan {
+    padding: 0% 0.5%;
+  }
+
+  .duan {
+    gap: 5%;
+    display: block;
+    padding: 0 5%;
+  }
+  .duanle {
+    margin-bottom: 10%;
+  }
+  .namduan {
+    display: grid;
+    grid-template-columns: 15% 75%;
+    gap: 10%;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+  .nam {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 40%;
+    padding: 10%;
+    color: white;
+    margin-left: 10%;
+  }
+}

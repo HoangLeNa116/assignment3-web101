@@ -1,0 +1,117 @@
+body {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: auto auto;
+}
+section {
+  padding: 10px;
+}
+.goals,
+.scopes,
+.team,
+.primary,
+.timeline {
+  border: 1em solid blue;
+  background-color: rgb(214, 237, 241);
+}
+
+.scopes,
+.primary {
+  display: block;
+  border-top: 0em solid blue;
+}
+.team,
+.primary {
+  display: block;
+  border-right: 0em solid blue;
+  border-left: 0em solid blue;
+}
+h1 {
+  color: blue;
+  border-bottom: 2px solid grey;
+  margin: 5px;
+}
+.team {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.timeline {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+.content {
+  display: grid;
+}
+.detail {
+  display: grid;
+  gap: 13%;
+  grid-template-columns: 20% 80%;
+  width: auto;
+  padding: 20px 20px 0px 20px;
+  margin: 20px 25px;
+}
+i {
+  font-size: 2rem;
+}
+/* scopes desktop */
+.scopes .content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.scopes-content {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* goals */
+.goals .detail {
+  margin: 10px;
+  border-bottom: 1px solid gray;
+}
+/* timeline */
+.timeline .detail {
+  border-bottom: 1px dotted gray;
+}
+
+/* table */
+@media screen and (max-width: 992px) {
+  main {
+    display: block;
+  }
+  .detail {
+    display: block;
+    gap: 13%;
+    width: auto;
+    padding: 20px 20px 0px 20px;
+    margin: 20px 25px;
+  }
+
+  .scopes-content {
+    padding-left: 20px;
+    display: block;
+  }
+  /* viền xanh */
+  .scopes,
+  .primary {
+    display: block;
+    border-top: 0em solid blue;
+  }
+  .team,
+  .primary {
+    display: block;
+    border: 1em solid blue;
+    border-top: 0em;
+    border-bottom: 0em;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+}
